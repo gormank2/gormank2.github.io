@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8"/>
+
+    <!-- p5js -->
+    <script src="./p5.min.js"></script>
+    <script src="./p5.dom.js"></script>
+
+    <!-- sketch -->
+    <script src="./sketch.js"></script>
+
+    <!-- Center and highlight sketch -->
+    <style>
+      body { background:rgb( 112,138,144 ); 
+      <font face="Georgia"></font>}
+      #sketch { display:table;margin:1em auto;padding:0; }
+      #sketch canvas { border:1px solid rgb( 100,100,100 ); }
+      /*visited link*/
+      a:visited{
+          color: #FFFFFF;
+        }
+        /*mouse over link*/
+        a:hover{
+          color: #FFFFFF;
+        }
+        /* selected link */
+        a:active {
+          color: #888888;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sketch" style="position:relative"></div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="./index.html" role="tab" data-toggle="tab"><b>Home</b></a></li>
+      <li><a href="./resume.html" role="tab" data-toggle="tab"><font color = "#0"><b>Resume</b></font></a></li>
+      <li><a href="./projects.html" role="tab" data-toggle="tab"><font color = "#0"><b>Projects</b></font></a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home"></div>
+      <div class="tab-pane active" id="profile"></div>
+      <div class="tab-pane active" id="projects"></div>
+    </div>
+
+    <center>
+      <font size="5">
+        <font face="Georgia">
+        <p><b>Research and Projects</b></p>
+        <a href = "http://crcv.ucf.edu/REU/reu2014/kylie_gorman/">REU Computer Vision Project</a>
+        <p><a href = "./poster_ucf_final.pdf">Dense Color Moment: A New Discriminative Color Descriptor</a></p>
+        <p><a href = "./Final Presentation.pdf">Mobile Application: SnackTrack</a></p>
+        <p><a href = "http://kgimm-110.blogspot.com/2014/03/blog-post.html">IMM Blog</a></p>
+        <p></p>
+        <p><b>Javascript Projects</b></p>
+        <a href = "./empty/index.html">Clock</a>
+        <p><a href = "./game/index.html">Typing Game</a></p>
+        </font>
+      </font>
+    </center>
+
+  </body>
+</html>
