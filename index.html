@@ -1,27 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Optional theme --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8"/>
+
+    <!-- p5js -->
+    <script src="./p5.min.js"></script>
+    <script src="./p5.dom.js"></script>
+
+    <!-- sketch -->
+    <script src="./sketch.js"></script>
+
+    <!-- Center and highlight sketch -->
+    <style>
+      body { background:rgb( 112,138,144 ); 
+      <font face="Georgia"></font>}
+      #sketch { display:table;margin:1em auto;padding:0; }
+      #sketch canvas { border:1px solid rgb( 100,100,100 ); }
+      /** Image circles */
+      .img-circle {
+        -webkit-border-radius: 140px;
+        -moz-border-radius: 140px;
+        border-radius: 140px;
+        width: 85%;
+        margin: 2% auto;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div id="sketch" style="position:relative"></div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="./index.html" role="tab" data-toggle="tab"><b>Home</b></a></li>
+      <li><a href="./resume.html" role="tab" data-toggle="tab"><font color = "#0"><b>Resume</b></font></a></li>
+      <li><a href="./projects.html" role="tab" data-toggle="tab"><font color = "#0"><b>Projects</b></font></a></li>
+    </ul>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home"></div>
+      <div class="tab-pane active" id="profile"></div>
+      <div class="tab-pane active" id="projects"></div>
+    </div>
+
+    <center>
+      <font size="7">
+        <font face="Georgia">
+        <p><b>Kylie Gorman</b></p>
+        </font>
+      </font>
+    </center>
+
+    <center>
+      <font size="5">
+        <font face="Georgia">
+        <p>The College of New Jersey</p>
+        </font>
+      </font>
+    </center>
+
+    <center>
+      <img src="me.jpg" alt="Kylie" style="width:200px;height:235px">
+    </center>
+
   </body>
 </html>
