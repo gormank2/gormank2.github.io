@@ -1,0 +1,428 @@
+/*General throughout site*/
+body {
+    background: #F2EEB3;
+    font-family: Georgia;
+}
+
+h1{
+    text-align: center;
+    font-size: 300%;
+    color: #D9853B;
+}
+
+h2{
+    text-align: center;
+    color: #558C89;
+    font-size: 250%;
+}
+
+p{
+    text-align: center;
+    color: #558C89;
+    font-weight: bold;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+    display: block;
+}
+
+section {
+    /*width: 400px;*/
+    /*background: #8C6954;*/
+}
+
+/**************************************************/
+/*Navigation Area*/
+nav {
+    /*position: fixed;*/
+    background-color: #D9853B;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    margin: 0px auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    padding: 0px 40px 0px 40px;
+    margin: 0 auto;
+}
+
+nav li a{
+    color: #F2EEB3;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 200%;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #558075;
+   /* background: #ECECEA;*/
+}
+
+/**************************************************/
+/*Home Page*/
+.about{
+    font-family: Georgia;
+    color: #558C89;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+    background: #ECECEA;
+    box-shadow: 0 0 15px;
+}
+
+.displayed{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 150px;
+    box-shadow: 0px 0px 15px;
+    box-shadow: 0px 0px 15px;
+}
+
+/**************************************************/
+/*Resume*/
+.rlist li{
+    text-align: center;
+    list-style: none;
+    color: #558C89;
+    font-weight: bold;
+}
+
+.res2{
+}
+
+.ed{
+    background: #ECECEA;
+    width: 50%;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+/**************************************************/
+/*Research*/
+.display{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 150px;
+    box-shadow: 0px 0px 15px;
+    box-shadow: 0px 0px 15px;
+}
+
+.res{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.res a{
+    background: #ECECEA;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 200%;
+    font-weight: bold;
+    color: #558C89;
+}
+
+.res a:hover{
+    color: #D9853B;
+}
+
+.res li{
+    list-style: none;
+    padding-bottom: 3%;
+}
+/**************************************************/
+/*Games*/
+.games{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.games a{
+    background: #ECECEA;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 200%;
+    font-weight: bold;
+    color: #558C89;
+}
+
+.games a:hover{
+    color: #D9853B;
+}
+
+.games li{
+    list-style: none;
+    padding-bottom: 4%;
+}
+/**************************************************/
+/*Image Gallery*/
+
+.pics{
+    height: 150px;
+    width: 150px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    border-radius: 150px;
+    margin: 0 auto;
+}
+
+.pics a:hover{
+    background: #D9853B;
+}
+
+.pic{
+    padding-left: 27%;
+    padding-top: 20px;
+}
+
+.pic2{
+    padding-top: 170px;
+    padding-left: 27%;
+}
+
+.pic3{
+    padding-left: 27%;
+    padding-top: 170px;
+}
+/**************************************************/
+/*Email*/
+.Input{
+    padding: 5%;
+}
+
+.navigation {
+    /*background-color: #D9853B;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    border-radius: 10%;
+    box-shadow: 0 0 15px;
+    margin: 0px auto;*/
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation li {
+    float: left;
+    padding: 0px 40px 0px 40px;
+}
+
+.navigation li a{
+    color: #F2EEB3;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 200%;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: #558075;
+   /* background: #ECECEA;*/
+}
+
+.con{
+    text-align: center;
+    font-size: 100%;
+    color: #D9853B;
+    font-family: Georgia;
+}
+
+.con h1{
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.con h2{
+    color: #558C89;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 250%;
+}
+
+.form-group{
+    color: #D9853B;
+    font-size: 175%;
+    font-weight: bold;
+}
+
+.btn-primary{
+    color: #558C89;
+    font-weight: bold;
+    font-size: 125%;
+    height: 50px;
+    width: 150px;
+    background: #FFFFFF;
+    outline-color: #000000;
+}
+
+.btn-default{
+    color: #D9853B;
+    font-weight: bold;
+    font-size: 125%;
+    height: 50px;
+    width: 150px; 
+}
+
+/**************************************************/
+/*Media Queries*/
+@media screen and (max-width: 1400px;) {
+    
+    .display{
+        height: 150px;
+        width: 150px;
+    }
+
+    #img1{
+        height: 100px;
+        width: 100px;
+    }
+
+    #img2{
+        height: 100px;
+        width: 100px;
+    }
+
+    #img3{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/**************************************************/
+/*Size2*/
+@media screen and (max-width: 1220px) {
+    nav{
+        padding-bottom: 100px;
+    }
+
+    /*Research*/
+    .display{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/**************************************************/
+/*Size 3*/
+@media screen and (max-width: 755px){
+    nav{
+        padding-bottom: 150px;
+    }
+
+    /*Resume*/
+    .ed{
+        width: 67%;
+    }
+
+    /*Research*/
+    .res a{
+        font-size: 150%;
+    }
+
+    /*Games*/
+    .games li{
+        padding-bottom: 7%;
+        font-size: 50%;
+    }
+
+}
+
+/**************************************************/
+/*Size 4*/
+@media screen and (max-width: 520px){
+    nav{
+        padding-bottom: 200px;
+    }
+
+    nav li a{
+        font-size: 185%;
+    }
+
+    nav li{
+        padding-left: 0px;
+    }
+
+    h1{
+        font-size: 250%;
+    }
+
+    h2{
+        font-size: 200%;
+    }
+
+    p{
+        font-size: 75%;
+    }
+
+    /*Index*/
+    .about{
+        width: 75%;
+    }
+
+    .displayed{
+        height: 200px;
+        width: 200px;
+    }
+
+    /*Resume*/
+    .ed{
+        width: 75%;
+    }
+
+    .res{
+        padding-top: 50px;
+    }
+
+    .res a{
+        font-size: 75%;
+    }
+
+    /*Research and Games*/
+    .games{
+        font-size: 75%;
+        width: 100%;
+    }
+
+    .games li{
+        padding-top: 20px;
+    }
+}
