@@ -1,25 +1,67 @@
 /*General throughout site*/
 body {
-    background: #F2EEB3;
+    background: #b1b1b1;
     font-family: Georgia;
 }
 
-h1{
-    text-align: center;
+.brand{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    background: #4C5364;
+    box-shadow: 0 0 15px;
+}
+
+.brand p{
     font-size: 300%;
-    color: #D9853B;
+    color: #ECECEA;
+    padding-top: 20px;
+    font-family: 'Enriqueta', serif;
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 325%;
+    color: #4C5364;
+    padding-top: 125px;
+    padding-bottom: 10px;
 }
 
 h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     text-align: center;
     color: #558C89;
     font-size: 250%;
+    padding-top: 10px;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    color: #4C5364;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 110%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 p{
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: #558C89;
+    color: #4C5364;
     font-weight: bold;
+    font-size: 110%;
+    /*color: #C26868;
+    /*color: #464C57;
+    /*color: #495266;
+    /*color: #4C5364;//header
+    /*color: #fafafa;
+    color: #333333;*/
 }
 
 header,
@@ -36,68 +78,131 @@ section {
     /*background: #8C6954;*/
 }
 
+footer {
+}
+
+/**************************************************/
+/*Hamburger*/
+
+.mobile-nav{
+}
+
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+ 
+.menu-btn span {
+	display: block;
+	width: 25px;
+	height: 4px;
+	margin: 4px 0;
+	background: #ECECEA;
+	/*z-index: 99;*/
+}
+ 
+.responsive-menu{
+	display: none;
+}
+ 
+.expand {
+	display: block !important; 
+}
 /**************************************************/
 /*Navigation Area*/
 nav {
-    /*position: fixed;*/
-    background-color: #D9853B;
-    padding-bottom: 50px;
-    padding-top: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px;
+    position: fixed !important;
+    background-color: #4C5364;
     margin: 0px auto;
+    width: 20%;
+    top: 50px;
+    font-family: 'Lato', sans-serif;
+    opacity: .75;
 }
 
 nav ul {
     list-style-type: none;
+    top: 0;
 }
 
 nav li {
     float: left;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 170px 0px 40px;
     margin: 0 auto;
+    font-size: 110%;
 }
 
 nav li a{
-    color: #F2EEB3;
+    color: #ECECEA;
     display: block;
     text-align: center;
-    text-transform: uppercase;
     font-weight: bold;
     font-size: 200%;
-    border-radius: 50px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 nav li a:hover{
-    color: #558075;
-   /* background: #ECECEA;*/
+    color: #558C89;
 }
 
 /**************************************************/
 /*Home Page*/
 .about{
-    font-family: Georgia;
     color: #558C89;
     font-weight: bold;
     text-align: center;
     width: 50%;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 0px 10px 10px 10px;
+    padding: 0 10px 10px 10px;
     background: #ECECEA;
     box-shadow: 0 0 15px;
+}
+
+.about2{
+    color: #558C89;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    background: #ECECEA;
+    box-shadow: 0 0 15px;
+}
+
+.about2 h2{
+    padding-right: 170px;
 }
 
 .displayed{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 150px;
+    border-radius: 10px;
     box-shadow: 0px 0px 15px;
     box-shadow: 0px 0px 15px;
 }
 
+.gal{
+    /*border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    background: #ECECEA;
+    box-shadow: 0 0 15px;
+    margin: 0 auto;*/
+}
+
+.gal h1{
+    /*padding-top: 10px;*/
+}
 /**************************************************/
 /*Resume*/
 .rlist li{
@@ -116,7 +221,7 @@ nav li a:hover{
     margin: 0px auto;
     border-radius: 10px;
     box-shadow: 0 0 15px;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 20px 10px;
 }
 
 /**************************************************/
@@ -125,18 +230,20 @@ nav li a:hover{
     height: 150px;
     width: 150px;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    /*margin-right: auto;
+    margin-left: auto;*/
     border-radius: 150px;
     box-shadow: 0px 0px 15px;
     box-shadow: 0px 0px 15px;
+    float: left;
+    margin: 15px;
 }
 
 .res{
     margin: 0 auto;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .res a{
@@ -146,19 +253,51 @@ nav li a:hover{
     box-shadow: 0 0 15px;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    font-family: Georgia;
-    font-size: 200%;
+    font-family: 'Lato', sans-serif;
+    font-size: 150%;
     font-weight: bold;
-    color: #558C89;
+    color: #4C5364;
 }
 
 .res a:hover{
-    color: #D9853B;
+    color: #558C89;
 }
 
 .res li{
     list-style: none;
     padding-bottom: 3%;
+    padding-right: 3%;
+}
+
+.res2{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 160px;
+}
+
+.res2 a{
+    background: #ECECEA;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    color: #4C5364;
+}
+
+.res2 a:hover{
+    color: #558C89;
+}
+
+.res2 li{
+    list-style: none;
+    padding-bottom: 3%;
+    padding-right: 3%;
 }
 /**************************************************/
 /*Games*/
@@ -174,7 +313,7 @@ nav li a:hover{
     box-shadow: 0 0 15px;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    font-family: Georgia;
+    font-family: 'Lato', sans-serif;
     font-size: 200%;
     font-weight: bold;
     color: #558C89;
@@ -186,7 +325,9 @@ nav li a:hover{
 
 .games li{
     list-style: none;
-    padding-bottom: 4%;
+    padding-bottom: 3%;
+    padding-right: 30px;
+    padding-top: 10px;
 }
 /**************************************************/
 /*Image Gallery*/
@@ -259,51 +400,67 @@ nav li a:hover{
 }
 
 .con{
-    text-align: center;
     font-size: 100%;
     color: #D9853B;
-    font-family: Georgia;
+    font-family: 'Lato', sans-serif;
 }
 
 .con h1{
-    font-family: Georgia;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 300%;
 }
 
 .con h2{
     color: #558C89;
-    font-family: Georgia;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 250%;
 }
 
 .form-group{
-    color: #D9853B;
+    color: #558C89;
     font-size: 175%;
     font-weight: bold;
 }
 
 .btn-primary{
-    color: #558C89;
+    color: #4C5364;
     font-weight: bold;
     font-size: 125%;
-    height: 50px;
-    width: 150px;
+    font-family: 'Lato', sans-serif;
     background: #FFFFFF;
     outline-color: #000000;
 }
 
 .btn-default{
-    color: #D9853B;
+    color: #558C89;
     font-weight: bold;
     font-size: 125%;
-    height: 50px;
-    width: 150px; 
+    font-family: 'Lato', sans-serif;
+}
+
+.myForm{
+    color: #558C89;
+    background: #ECECEA;
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+    /*font-weight: bold;*/
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 0 15px;
 }
 
 /**************************************************/
 /*Media Queries*/
+@media screen and (max-width: 1500px;) {
+    h1{
+        padding-top: 100px;
+    }
+}
+/**************************************************/
 @media screen and (max-width: 1400px;) {
     
     .display{
@@ -325,13 +482,25 @@ nav li a:hover{
         height: 100px;
         width: 100px;
     }
+    
+    nav{
+        padding-bottom: 0px;
+    }
+    
+    h1{
+        padding-top: 150px;
+    }
 }
 
 /**************************************************/
 /*Size2*/
 @media screen and (max-width: 1220px) {
     nav{
-        padding-bottom: 100px;
+        padding-bottom: 0px;
+    }
+    
+    h1{
+        padding-top: 100px;
     }
 
     /*Research*/
@@ -345,7 +514,11 @@ nav li a:hover{
 /*Size 3*/
 @media screen and (max-width: 755px){
     nav{
-        padding-bottom: 150px;
+        padding-bottom: 0px;
+    }
+    
+    h1{
+        padding-top: 150px;
     }
 
     /*Resume*/
@@ -370,7 +543,7 @@ nav li a:hover{
 /*Size 4*/
 @media screen and (max-width: 520px){
     nav{
-        padding-bottom: 200px;
+        padding-left: 10px;
     }
 
     nav li a{
@@ -383,6 +556,7 @@ nav li a:hover{
 
     h1{
         font-size: 250%;
+        padding-top: 200px;
     }
 
     h2{
@@ -415,6 +589,10 @@ nav li a:hover{
     .res a{
         font-size: 75%;
     }
+    
+    .res li{
+        padding-right: 40px;
+    }
 
     /*Research and Games*/
     .games{
@@ -424,5 +602,19 @@ nav li a:hover{
 
     .games li{
         padding-top: 20px;
+    }
+    
+    /*Email*/
+    .form-group{
+        font-size: 150%;
+    }
+    
+    .myForm{
+        width: 75%;
+    }
+    
+    .navigation li{
+        font-size: 100%;
+        padding-left: 0px;
     }
 }

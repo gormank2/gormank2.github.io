@@ -2,35 +2,62 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="site.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto' rel='stylesheet' type='text/css'>
     <title>Interactive Games</title>
 </head>
 
 <body>
+    <section class="brand">
+        <p>Kylie Gorman</p>
+    </section>
     <nav>
         <ul>
             <li><a href="./index.html">Home</a>
             </li>
             <li><a href="./resume.html">Resume</a>
             </li>
-            <li><a href="./research.html">Research</a>
-            </li>
-            <li><a href="./games.html">Games</a>
+            <li><a href="./research.html">Projects</a>
             </li>
             <li><a href="./contact.html">Contact</a>
             </li>
         </ul>
     </nav>
-    <h1>Games</h1>
+    <h1>Projects</h1>
     <section class="games">
         <ul>
-            <li><a href="./game/index.html">Typing Game</a></li>
-            <li><a href="./empty/index.html">Clock</a></li>
-            <li><a href="./files/VisionDocument.pdf">Vision Document</a></li>
-            <li><a href="http://kgimm-110.blogspot.com/">Blog</a></li>
+            <h2>Javascript Clock</h2>
+            <h3>An analog and digital clock created in Javascript</h3>
+            <li><img class="display" src="./pics/clock.PNG" alt="NAO" height="232" width="232"></li>
+            <li><a class="external" href="./empty/index.html">Clock</a>
+            </li>
+            <h2>Interactive Multimedia Blog</h2>
+            <h3>Examples of Photoshop projects</h3>
+            <li><img class="display" src="./pics/paper.JPG" alt="NAO" height="232" width="232"></li>
+            <li><a class="external" href="http://kgimm-110.blogspot.com/">Blog Site</a>
+            </li>
+            <h2>Javascript Typing Game</h2>
+            <h3>Enter your name to play my typing game that allows you to score points by typing the letters that fall down the screen</h3>
+            <li><img class="display" src="./pics/game.PNG" alt="NAO" height="232" width="232"></li>
+            <li><a class="external" href="./game/index.html">Typing Game</a>
+            </li>
+            <h2>Vision Document</h2>
+            <h3>Design and Plan for the site</h3>
+            <li><a class="external" href="./files/VisionDocument.pdf">Vision Document</a>
+            </li>
         </ul>
     </section>
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".external").attr("target","_blank");  // Only a hrefs with "external" css class
+        });
+    </script>
 </body>
 
 </html>

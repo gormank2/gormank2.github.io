@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="site.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto' rel='stylesheet' type='text/css'>
     <title>Email</title>
 </head>
 
@@ -20,7 +21,7 @@
                 </li>
                 <li><a href="./research.html">Research</a>
                 </li>
-                <li><a href="./games.html">Games</a>
+                <li><a href="./games.html">Projects</a>
                 </li>
                 <li><a href="./contact.html">Contact</a>
                 </li>
@@ -30,21 +31,30 @@
     <section class="con">
         <h1>Contact Form</h1>
     </section>
-    <section class="Input">
-        <form action="mailto:gormank2@tcnj.edu" method="post" enctype="text/plain">
-            <div class="form-group">
-                <label for="exampleInputName1">Name</label>
-                <input type="name" class="form-control" name="name" id="exampleInputName1" placeholder="Enter Name">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email Address</label>
-                <input type="email" class="form-control" name="Email" id="exampleInputEmail1" placeholder="Enter Email">
-            </div>
-            <section class="myBtn">
-            <button type="submit" class="btn btn-default">Submit</button>
-            </section>
-        </form>
+    <section class="myForm">
+        <section class="Input">
+            <form action="mailto:gormank2@tcnj.edu" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="exampleInputName1">Name</label>
+                    <input type="name" class="form-control" id="exampleInputName1" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control" name="message"></textarea>
+                </div>
+                <section class="myBtn">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </section>
+            </form>
+        </section>
     </section>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
 </body>
 

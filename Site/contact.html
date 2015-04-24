@@ -2,34 +2,83 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="site.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto|Enriqueta' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <title>Contact</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a>
-            </li>
-            <li><a href="./resume.html">Resume</a>
-            </li>
-            <li><a href="./research.html">Research</a>
-            </li>
-            <li><a href="./games.html">Games</a>
-            </li>
-            <li><a href="./contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <h1>Contact Me</h1>
-    <section class="games">
-        <ul>
-            <li><a href="./email.html">Email Me</a></li>
-            <li><a href="./try.html">Gallery</a></li>
-        </ul>
+    <section class="brand">
+        <p>Kylie Gorman</p>
     </section>
+        <nav>
+        <div class="mobile-nav">
+            <div class="menu-btn" id="menu-btn">
+                <div></div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="responsive-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a>
+                    </li>
+                    <li><a href="./resume.html">Resume</a>
+                    </li>
+                    <li><a href="./research.html">Projects</a>
+                    </li>
+                    <li><a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('.menu-btn').click(function () {
+                $('.responsive-menu').toggleClass('expand')
+            })
+        })
+    </script>
+    
+    <section class="con">
+        <h1>Contact Form</h1>
+        <section class="games">
+            <section class="myForm">
+                <section class="Input">
+                    <form action="mailto:gormank2@tcnj.edu" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="name" class="form-control" id="exampleInputName1" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" name="message"></textarea>
+                        </div>
+                        <section class="myBtn">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </section>
+                    </form>
+                </section>
+            </section>
+
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+        </section>
+    </section>
+
 </body>
 
 </html>

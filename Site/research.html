@@ -2,46 +2,98 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="site.css">
-    <title>Research</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto|Enriqueta' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Projects</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a>
-            </li>
-            <li><a href="./resume.html">Resume</a>
-            </li>
-            <li><a href="./research.html">Research</a>
-            </li>
-            <li><a href="./games.html">Games</a>
-            </li>
-            <li><a href="./contact.html">Contact</a>
-            </li>
-        </ul>
+    <section class="brand">
+        <p>Kylie Gorman</p>
+    </section>
+        <nav>
+        <div class="mobile-nav">
+            <div class="menu-btn" id="menu-btn">
+                <div></div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="responsive-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a>
+                    </li>
+                    <li><a href="./resume.html">Resume</a>
+                    </li>
+                    <li><a href="./research.html">Projects</a>
+                    </li>
+                    <li><a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('.menu-btn').click(function () {
+                $('.responsive-menu').toggleClass('expand')
+            })
+        })
+    </script>
+    
     <h1>Research</h1>
-    <h2>Mobile Application: SnackTrack</h2>
-    <img class="display" src="./pics/mobile.PNG" alt="Mobile" height="232" width="232">
-    <section class="res">
-        <a href="./files/final_pres.pdf">Final Presentation</a>
+    <section class="about2">
+        <img class="display" src="./pics/nao.png" alt="NAO" height="232" width="232">
+        <h2>NAO Robot</h2>
+        <h3>Created With: Python</h3>
+        <h3>An exploration of NAO's capabilities including: Vision, Speech Recognition, and Joint Movement.</h3>
+        <section class="res2">
+            <a class="external" href="https://www.aldebaran.com/en">Learn More about NAO</a>
+        </section>
     </section>
-    <h2>NAO Robot Project</h2>
-    <img class="display" src="./pics/nao.png" alt="NAO" height="232" width="232">
-    <section class="res">
-        <a href="https://www.aldebaran.com/en">Learn More about NAO</a>
+    <section class="about2">
+        <img class="display" src="./pics/mobile.PNG" alt="Mobile" height="232" width="232">
+        <h2>SnackTrack</h2>
+        <h3>Created With: Objective C</h3>
+        <h3>A mobile application to help its users manage their food inventories</h3>
+        <section class="res2">
+            <a class="external" href="./files/final_pres.pdf">Final Presentation</a>
+        </section>
     </section>
-    <h2>Computer Vision Project</h2>
-    <img class="display" src="./pics/vision.png" alt="Vision" height="232" width="232">
-    <section class="res">
-        <ul>
-            <li><a href="./files/dense_color_moment.docx">Research Paper</a></li>
-            <br>
-            <li><a href="./files/poster_ucf_final.pptx">Research Poster</a></li>
-        </ul>
-</section>
+    <section class="about2">
+        <img class="display" src="./pics/vision.png" alt="Vision" height="232" width="232">
+        <h2>REU: Vision Project</h2>
+        <h3>Created With: MATLAB</h3>
+        <h3>Creation of a discriminative color descriptor utilizing color moments during my summer at the University of Central Florida Center for Research in Computer Vision</h3>
+        <section class="res2">
+            <a class="external" href="./files/dense_color_moment.docx">Research Paper</a>
+        </section>
+        <section class="res">
+            <a class="external" href="./files/poster_ucf_final.pptx">Poster</a>
+        </section>
+    </section>
+    <section class="about2">
+        <img class="display" src="./pics/clock.PNG" alt="NAO" height="232" width="232">
+        <h2>Javascript Clock</h2>
+        <h3>An analog and digital clock created in Javascript</h3>
+        <section class="res2">
+            <a class="external" href="./empty/index.html">Clock</a>
+        </section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".external").attr("target", "_blank"); // Only a hrefs with "external" css class
+        });
+    </script>
 </body>
 
 </html>

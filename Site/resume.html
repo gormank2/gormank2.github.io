@@ -2,74 +2,103 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="site.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto|Enriqueta' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <title>Resume</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a>
-            </li>
-            <li><a href="./resume.html">Resume</a>
-            </li>
-            <li><a href="./research.html">Research</a>
-            </li>
-            <li><a href="./games.html">Games</a>
-            </li>
-            <li><a href="./contact.html">Contact</a>
-            </li>
-        </ul>
+    <section class="brand">
+        <p>Kylie Gorman</p>
+    </section>
+        <nav>
+        <div class="mobile-nav">
+            <div class="menu-btn" id="menu-btn">
+                <div></div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="responsive-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a>
+                    </li>
+                    <li><a href="./resume.html">Resume</a>
+                    </li>
+                    <li><a href="./research.html">Projects</a>
+                    </li>
+                    <li><a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section class="res2">
-        <h1>Resume</h1>
-        <h2>Education</h2>
-        <article class="ed">
-            <p>The College of New Jersey (TCNJ), Ewing, New Jersey: May 2016</p>
-            <p>Bachelor of Science in Computer Science, Minor in Interactive Multimedia</p>
-            <p>Cumulative GPA: 3.8/4.0, Honors: Dean's List all semesters</p>
-            <p>TCNJ Faculty led study abroad in England, Scotland, and France June-July 2013</p>
-        </article>
-        <h2>Technical Skills</h2>
-        <article class="ed">
-            <p>Java</p>
-            <p>MATLAB</p>
-            <p>C++</p>
-            <p>Processing</p>
-            <p>LaTex</p>
-            <p>Python</p>
-            <p>HTML and CSS</p>
-        </article>
-        <h2>Research</h2>
-        <article class="ed">
-            <p>Research Experience for Undergraduates (REU) at the University of Central Florida (UCF) Center for Research in Computer Vision: May-August 2014</p>
-            <p>Dense Color Moment: A New Discriminative Color Descriptor (UCF): Collaborated with UCF graduate student to create a new, state of the art color descriptor</p>
-            <p>NAO Robot (TCNJ): TCNJ faculty led mentored research in the field of robotics</p>
-            <p>Mobile Application: SnackTrack: Users Manage their Food Inventory (TCNJ): Project for Human Computer Interaction Class that enabled me to explore creating user friendly interfaces and programming in Objective C</p>
-            <p>Web Application for Habitat for Humanity (TCNJ): Utilizes Nearest Neighbor Algorithm to Find Polluted Land</p>
-        </article>
-        <h2>Educational Honors</h2>
-        <article class="ed">
-            <p>Phi Kappa Phi Honor Society TCNJ Chapter Member: March 2015 - present</p>
-            <p>Computer Science Honor Society Upsilon Pi Epsilon President: May 2015- present, Member: May 2014 - present</p>
-            <p>Recipient of the Sophomore Computer Science Award at TCNJ</p>
-            <p>Recipient of the Freshman Computer Science Award at TCNJ</p>
-        </article>
-        <h2> Extracurricular Activities</h2>
-        <article class="ed">
-            <p>Women in Computing Science Club Member: August 2012 - present</p>
-            <p>Association of Computing Machinery (ACM) Club Member: August 2014 - present</p>
-            <p>Mobile Computing Club Member: August 2014 - present</p>
-            <p>New Jersey Christian Fellowship Member: August 2012 – present </p>
-        </article>
-        <h2> Work Experience</h2>
-        <article class="ed">
-            <p>Internship with SRI International: May 2015 – August 2015</p>
-            <p>Tutor at The College of New Jersey Tutoring Center: January 2015 – present, Underwent five weeks of communication training</p>
-            <p>Program Manager at the Brower Student Center at The College of New Jersey: January 2013 - May 2013</p>
-            <p>Duffield’s Farm Market Party Hostess: September 2008 – May 2012</p>
-        </article>
+    
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('.menu-btn').click(function () {
+                $('.responsive-menu').toggleClass('expand')
+            })
+        })
+    </script>
+    
+    <h1>Resume</h1>
+    <h2>Education</h2>
+    <article class="ed">
+        <p>The College of New Jersey (TCNJ), Ewing, New Jersey: May 2016</p>
+        <p>Bachelor of Science in Computer Science, Minor in Interactive Multimedia</p>
+        <p>Cumulative GPA: 3.8/4.0, Honors: Dean's List all semesters</p>
+        <p>TCNJ Faculty led study abroad in England, Scotland, and France June-July 2013</p>
+    </article>
+    <h2>Technical Skills</h2>
+    <article class="ed">
+        <p>Java</p>
+        <p>MATLAB</p>
+        <p>C++</p>
+        <p>Processing</p>
+        <p>LaTex</p>
+        <p>Python</p>
+        <p>HTML and CSS</p>
+    </article>
+    <h2>Research</h2>
+    <article class="ed">
+        <p>Research Experience for Undergraduates (REU) at the University of Central Florida (UCF) Center for Research in Computer Vision: May-August 2014</p>
+        <p>Dense Color Moment: A New Discriminative Color Descriptor (UCF): Collaborated with UCF graduate student to create a new, state of the art color descriptor</p>
+        <p>NAO Robot (TCNJ): TCNJ faculty led mentored research in the field of robotics</p>
+        <p>Mobile Application: SnackTrack: Users Manage their Food Inventory (TCNJ): Project for Human Computer Interaction Class that enabled me to explore creating user friendly interfaces and programming in Objective C</p>
+        <p>Web Application for Habitat for Humanity (TCNJ): Utilizes Nearest Neighbor Algorithm to Find Polluted Land</p>
+    </article>
+    <h2>Educational Honors</h2>
+    <article class="ed">
+        <p>Phi Kappa Phi Honor Society TCNJ Chapter Member: March 2015 - present</p>
+        <p>Computer Science Honor Society Upsilon Pi Epsilon President: May 2015- present, Member: May 2014 - present</p>
+        <p>Recipient of the Sophomore Computer Science Award at TCNJ</p>
+        <p>Recipient of the Freshman Computer Science Award at TCNJ</p>
+    </article>
+    <h2> Extracurricular Activities</h2>
+    <article class="ed">
+        <p>Women in Computing Science Club Member: August 2012 - present</p>
+        <p>Association of Computing Machinery (ACM) Club Member: August 2014 - present</p>
+        <p>Mobile Computing Club Member: August 2014 - present</p>
+        <p>New Jersey Christian Fellowship Member: August 2012 – present </p>
+    </article>
+    <h2> Work Experience</h2>
+    <article class="ed">
+        <p>Internship with SRI International: May 2015 – August 2015</p>
+        <p>Tutor at The College of New Jersey Tutoring Center: January 2015 – present, Underwent five weeks of communication training</p>
+        <p>Program Manager at the Brower Student Center at The College of New Jersey: January 2013 - May 2013</p>
+        <p>Duffield’s Farm Market Party Hostess: September 2008 – May 2012</p>
+    </article>
+    <br>
+    <h2>Resume Download</h2>
+    <section class="res">
+        <a href="./files/Resume.docx">Kylie Gorman's Resume</a>
     </section>
 </body>
 
