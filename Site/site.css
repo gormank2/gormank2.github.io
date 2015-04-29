@@ -1,7 +1,15 @@
 /*General throughout site*/
+.car{
+    height: 200px !important;
+    width: 135px !important;
+    border-radius: 10px;
+}
+
 body {
-    background: #b1b1b1;
-    font-family: Georgia;
+    /*background: #b1b1b1;*/
+    background-image: url("./pics/bg2.jpg");
+    background-attachment: fixed;
+    opacity: .95;
 }
 
 .brand{
@@ -17,11 +25,16 @@ body {
     font-size: 300%;
     color: #ECECEA;
     padding-top: 20px;
+    font-weight: bold;
     font-family: 'Enriqueta', serif;
 }
 
+.brand2{
+    padding-top: 50px;
+}
+
 h1{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Enriqueta', serif;
     font-weight: bold;
     text-align: center;
     font-size: 325%;
@@ -46,22 +59,14 @@ h3{
     margin: 0 auto;
     font-size: 110%;
     text-align: center;
-    font-weight: bold;
     padding-top: 10px;
 }
 
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     color: #4C5364;
-    font-weight: bold;
     font-size: 110%;
-    /*color: #C26868;
-    /*color: #464C57;
-    /*color: #495266;
-    /*color: #4C5364;//header
-    /*color: #fafafa;
-    color: #333333;*/
 }
 
 header,
@@ -71,14 +76,6 @@ article,
 aside,
 footer {
     display: block;
-}
-
-section {
-    /*width: 400px;*/
-    /*background: #8C6954;*/
-}
-
-footer {
 }
 
 /**************************************************/
@@ -106,7 +103,11 @@ footer {
 	height: 4px;
 	margin: 4px 0;
 	background: #ECECEA;
-	/*z-index: 99;*/
+	z-index: 99;
+}
+
+.contain{
+    padding-left: 40px;
 }
  
 .responsive-menu{
@@ -157,7 +158,6 @@ nav li a:hover{
 /*Home Page*/
 .about{
     color: #558C89;
-    font-weight: bold;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -192,17 +192,6 @@ nav li a:hover{
     box-shadow: 0px 0px 15px;
 }
 
-.gal{
-    /*border-radius: 10px;
-    padding: 0 10px 10px 10px;
-    background: #ECECEA;
-    box-shadow: 0 0 15px;
-    margin: 0 auto;*/
-}
-
-.gal h1{
-    /*padding-top: 10px;*/
-}
 /**************************************************/
 /*Resume*/
 .rlist li{
@@ -230,8 +219,6 @@ nav li a:hover{
     height: 150px;
     width: 150px;
     display: block;
-    /*margin-right: auto;
-    margin-left: auto;*/
     border-radius: 150px;
     box-shadow: 0px 0px 15px;
     box-shadow: 0px 0px 15px;
@@ -363,40 +350,6 @@ nav li a:hover{
 /*Email*/
 .Input{
     padding: 5%;
-}
-
-.navigation {
-    /*background-color: #D9853B;
-    padding-bottom: 50px;
-    padding-top: 5px;
-    border-radius: 10%;
-    box-shadow: 0 0 15px;
-    margin: 0px auto;*/
-}
-
-.navigation ul {
-    list-style-type: none;
-}
-
-.navigation li {
-    float: left;
-    padding: 0px 40px 0px 40px;
-}
-
-.navigation li a{
-    color: #F2EEB3;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 200%;
-    border-radius: 50px;
-    text-decoration: none;
-}
-
-.navigation li a:hover{
-    color: #558075;
-   /* background: #ECECEA;*/
 }
 
 .con{

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="shortcut icon" href="./pics/kylie.PNG">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
@@ -16,13 +17,15 @@
     <section class="brand">
         <p>Kylie Gorman</p>
     </section>
-        <nav>
+    <nav>
         <div class="mobile-nav">
-            <div class="menu-btn" id="menu-btn">
-                <div></div>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="contain">
+                <div class="menu-btn" id="menu-btn">
+                    <div></div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="responsive-menu">
@@ -39,7 +42,7 @@
             </div>
         </div>
     </nav>
-    
+
     <script type="text/javascript">
         jQuery(function ($) {
             $('.menu-btn').click(function () {
@@ -47,8 +50,8 @@
             })
         })
     </script>
-    
-    <h1>Research</h1>
+
+    <h1>Projects</h1>
     <section class="about2">
         <img class="display" src="./pics/nao.png" alt="NAO" height="232" width="232">
         <h2>NAO Robot</h2>
@@ -56,6 +59,18 @@
         <h3>An exploration of NAO's capabilities including: Vision, Speech Recognition, and Joint Movement.</h3>
         <section class="res2">
             <a class="external" href="https://www.aldebaran.com/en">Learn More about NAO</a>
+        </section>
+    </section>
+    <section class="about2">
+        <img class="display" src="./pics/vision.png" alt="Vision" height="232" width="232">
+        <h2>REU: Vision Project</h2>
+        <h3>Created With: MATLAB</h3>
+        <h3>Creation of a discriminative color descriptor utilizing color moments. Learn more about my summer at the University of Central Florida Center for Research in Computer Vision.</h3>
+        <section class="res2">
+            <a class="external" href="./files/dense_color_moment.docx">Research Paper</a>
+        </section>
+        <section class="res">
+            <a class="external" href="./files/poster_ucf_final.pptx">Poster</a>
         </section>
     </section>
     <section class="about2">
@@ -68,23 +83,29 @@
         </section>
     </section>
     <section class="about2">
-        <img class="display" src="./pics/vision.png" alt="Vision" height="232" width="232">
-        <h2>REU: Vision Project</h2>
-        <h3>Created With: MATLAB</h3>
-        <h3>Creation of a discriminative color descriptor utilizing color moments during my summer at the University of Central Florida Center for Research in Computer Vision</h3>
+        <img class="display" src="./pics/clock.PNG" alt="NAO" height="232" width="232">
+        <h2>Javascript Clock</h2>
+        <h3>Created With: Javascript</h3>
+        <h3>An analog and digital clock</h3>
         <section class="res2">
-            <a class="external" href="./files/dense_color_moment.docx">Research Paper</a>
-        </section>
-        <section class="res">
-            <a class="external" href="./files/poster_ucf_final.pptx">Poster</a>
+            <a class="external" href="./empty/index.html">Clock</a>
         </section>
     </section>
     <section class="about2">
-        <img class="display" src="./pics/clock.PNG" alt="NAO" height="232" width="232">
-        <h2>Javascript Clock</h2>
-        <h3>An analog and digital clock created in Javascript</h3>
+        <img class="display" src="./pics/game.PNG" alt="NAO" height="232" width="232">
+        <h2>Javascript Game</h2>
+        <h3>Created With: Javascript</h3>
+        <h3>A game that helps young children learn how to type</h3>
         <section class="res2">
-            <a class="external" href="./empty/index.html">Clock</a>
+            <a class="external" href="./game/index.html">Game</a>
+        </section>
+    </section>
+    <section class="about2">
+        <img class="display" src="./pics/paris.jpg" alt="NAO" height="232" width="232">
+        <h2>Interactive Multimedia Blog</h2>
+        <h3>A blog following various projects with Photoshop</h3>
+        <section class="res2">
+            <a class="external" href="http://kgimm-110.blogspot.com/">Blog</a>
         </section>
     </section>
 
@@ -94,6 +115,12 @@
             $(".external").attr("target", "_blank"); // Only a hrefs with "external" css class
         });
     </script>
+
+    <footer>
+        <section class="brand2">
+        </section>
+    </footer>
+
 </body>
 
 </html>
